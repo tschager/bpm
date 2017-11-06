@@ -19,7 +19,9 @@ The algorithm reads the patterns from stdin and outputs the matching substrings.
 
 ### Modification-Tolerant Blocked Pattern Matching
 We create the index:
-> ./CreateIndex_Mod sample/sample.fasta.db cfg/modifications.cfg
+
+> ./CreateIndex_Mod sample/sample.fasta cfg/modifications.cfg
+
 The file *cfg/modifications.cfg* specifies two modifications, namely +16 Da at M (all sites) and +1 Da at A (n-terminal, only allowed at the first character).
 
 *sample/patterns-mod.txt* contains two pattern. The first pattern has the masses of A(+1)VS,AN, and PGL. The second pattern has the masses of M(+16)FS,SV,M(+16)V
